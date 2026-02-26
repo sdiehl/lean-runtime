@@ -1,1 +1,6 @@
 /target
+vm/bc/Init/
+vm/tests/
+vm/integration-tests/
+vm/CLAUDE.md
+.DS_Store
