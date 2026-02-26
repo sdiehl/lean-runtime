@@ -15,9 +15,40 @@ jobs:
       - uses: Swatinem/rust-cache@v2
       - run: cargo fmt -- --check
       - run: cargo clippy -- -D warnings
-      - run: cargo build
+      - run: cargo build --release
       - run: cargo test
-      - run: cargo run --example hello
-      - run: cargo run --example nat_ops
-      - run: cargo run --example constructors
-      - run: cargo run --example closures
+
+      - name: Runtime examples
+        run: |
+          for example in runtime/examples/*.rs; do
+            name=$(basename "$example" .rs)
+            echo "  running example: $name"
+            cargo run -p lean-runtime --example "$name"
+          done
+
+      - name: Check bytecode disassembly is up to date
+        run: |
+          fail=0
+          count=0
+          for disasm in $(find vm/tests -name '*.disasm' | sort); do
+            bc="${disasm%.disasm}.leanbc"
+            if [ ! -f "$bc" ]; then
+              echo "MISSING: $bc (expected by $disasm)"
+              fail=1
+              continue
+            fi
+            if ! diff -q <(./target/release/lean4-vm disasm "$bc" 2>&1) "$disasm" >/dev/null 2>&1; then
+              echo "MISMATCH: $bc"
+              diff <(./target/release/lean4-vm disasm "$bc" 2>&1) "$disasm" || true
+              fail=1
+            fi
+            count=$((count + 1))
+          done
+          if [ "$fail" -ne 0 ]; then
+            echo ""
+            echo "Bytecode disassembly does not match checked-in .disasm files."
+            echo "If the bytecode format changed intentionally, regenerate with:"
+            echo "  for f in \$(find vm/tests -name '*.leanbc'); do ./target/release/lean4-vm disasm \"\$f\" > \"\${f%.leanbc}.disasm\"; done"
+            exit 1
+          fi
+          echo "All $count .disasm files match."

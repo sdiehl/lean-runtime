@@ -1,0 +1,217 @@
+Module
+  Strings: 1
+  Functions: 13
+  Externs: 9
+  Entry: 9
+
+Strings
+  [0] "Done: "
+
+Externs
+  [0] lean_nat_dec_lt (arity 2)
+  [1] lean_array_push (arity 2)
+  [2] lean_nat_add (arity 2)
+  [3] lean_get_stdout (arity 0)
+  [4] lean_string_push (arity 2)
+  [5] lean_mk_empty_array_with_capacity (arity 1)
+  [6] lean_array_get_size (arity 1)
+  [7] l_Nat_reprFast (arity 1)
+  [8] lean_string_append (arity 2)
+
+Functions
+  [0] l___private_Init_Data_Range_Basic_0__Std_Legacy_Range_forIn_x27_loop___at___00main_spec__0___redArg (arity 4, locals 11)
+    0000: LoadLocal 0
+    0003: CtorGet 1
+    0005: StoreLocal 8
+    0008: LoadLocal 0
+    0011: CtorGet 2
+    0013: StoreLocal 6
+    0016: LoadLocal 2
+    0019: LoadLocal 8
+    0022: CallExtern extern=0, args=2
+    0028: StoreLocal 4
+    0031: LoadLocal 4
+    0034: Dup
+    0035: NatLit 0
+    0044: NatEq
+    0045: JumpIfNot 19 (-> 69)
+    0050: Pop
+    0051: LoadLocal 1
+    0054: AllocCtor tag=0, fields=1
+    0057: StoreLocal 10
+    0060: LoadLocal 10
+    0063: Ret
+    0064: Jump 63 (-> 132)
+    0069: Pop
+    0070: LoadLocal 1
+    0073: LoadLocal 2
+    0076: CallExtern extern=1, args=2
+    0082: StoreLocal 7
+    0085: LoadLocal 2
+    0088: LoadLocal 6
+    0091: CallExtern extern=2, args=2
+    0097: StoreLocal 5
+    0100: LoadLocal 0
+    0103: LoadLocal 7
+    0106: LoadLocal 5
+    0109: NatLit 0
+    0118: Box
+    0119: Call func=0, args=4
+    0125: StoreLocal 9
+    0128: LoadLocal 9
+    0131: Ret
+
+  [1] l___private_Init_Data_Range_Basic_0__Std_Legacy_Range_forIn_x27_loop___at___00main_spec__0___redArg___boxed (arity 4, locals 5)
+    0000: LoadLocal 0
+    0003: LoadLocal 1
+    0006: LoadLocal 2
+    0009: LoadLocal 3
+    0012: Call func=0, args=4
+    0018: StoreLocal 4
+    0021: LoadLocal 4
+    0024: Ret
+
+  [2] l_IO_print___at___00IO_println___at___00main_spec__1_spec__1 (arity 2, locals 5)
+    0000: CallExtern extern=3, args=0
+    0006: StoreLocal 3
+    0009: LoadLocal 3
+    0012: CtorGet 4
+    0014: StoreLocal 2
+    0017: LoadLocal 2
+    0020: LoadLocal 0
+    0023: NatLit 0
+    0032: Box
+    0033: Apply args=2
+    0035: StoreLocal 4
+    0038: LoadLocal 4
+    0041: Ret
+
+  [3] l_IO_print___at___00IO_println___at___00main_spec__1_spec__1___boxed (arity 2, locals 3)
+    0000: LoadLocal 0
+    0003: LoadLocal 1
+    0006: Call func=2, args=2
+    0012: StoreLocal 2
+    0015: LoadLocal 2
+    0018: Ret
+
+  [4] l_IO_println___at___00main_spec__1 (arity 2, locals 5)
+    0000: NatLit 10
+    0009: Unbox
+    0010: StoreLocal 3
+    0013: LoadLocal 0
+    0016: LoadLocal 3
+    0019: CallExtern extern=4, args=2
+    0025: StoreLocal 2
+    0028: LoadLocal 2
+    0031: NatLit 0
+    0040: Box
+    0041: Call func=2, args=2
+    0047: StoreLocal 4
+    0050: LoadLocal 4
+    0053: Ret
+
+  [5] l_IO_println___at___00main_spec__1___boxed (arity 2, locals 3)
+    0000: LoadLocal 0
+    0003: LoadLocal 1
+    0006: Call func=4, args=2
+    0012: StoreLocal 2
+    0015: LoadLocal 2
+    0018: Ret
+
+  [6] l_main___closed__0 (arity 0, locals 2)
+    0000: NatLit 0
+    0009: StoreLocal 0
+    0012: LoadLocal 0
+    0015: CallExtern extern=5, args=1
+    0021: StoreLocal 1
+    0024: LoadLocal 1
+    0027: Ret
+
+  [7] l_main___closed__1 (arity 0, locals 4)
+    0000: NatLit 1
+    0009: StoreLocal 0
+    0012: NatLit 43
+    0021: StoreLocal 1
+    0024: NatLit 0
+    0033: StoreLocal 3
+    0036: LoadLocal 3
+    0039: LoadLocal 1
+    0042: LoadLocal 0
+    0045: AllocCtor tag=0, fields=3
+    0048: StoreLocal 2
+    0051: LoadLocal 2
+    0054: Ret
+
+  [8] l_main___closed__2 (arity 0, locals 1)
+    0000: StringLit str[0]
+    0005: StoreLocal 0
+    0008: LoadLocal 0
+    0011: Ret
+
+  [9] l_main (arity 1, locals 11)
+    0000: NatLit 0
+    0009: StoreLocal 2
+    0012: Call func=6, args=0
+    0018: StoreLocal 7
+    0021: Call func=7, args=0
+    0027: StoreLocal 4
+    0030: LoadLocal 4
+    0033: LoadLocal 7
+    0036: LoadLocal 2
+    0039: NatLit 0
+    0048: Box
+    0049: Call func=0, args=4
+    0055: StoreLocal 8
+    0058: LoadLocal 8
+    0061: CtorGet 0
+    0063: StoreLocal 5
+    0066: Call func=8, args=0
+    0072: StoreLocal 1
+    0075: LoadLocal 5
+    0078: CallExtern extern=6, args=1
+    0084: StoreLocal 10
+    0087: LoadLocal 10
+    0090: CallExtern extern=7, args=1
+    0096: StoreLocal 6
+    0099: LoadLocal 1
+    0102: LoadLocal 6
+    0105: CallExtern extern=8, args=2
+    0111: StoreLocal 3
+    0114: LoadLocal 3
+    0117: NatLit 0
+    0126: Box
+    0127: Call func=4, args=2
+    0133: StoreLocal 9
+    0136: LoadLocal 9
+    0139: Ret
+
+  [10] l_main___boxed (arity 1, locals 2)
+    0000: LoadLocal 0
+    0003: Call func=9, args=1
+    0009: StoreLocal 1
+    0012: LoadLocal 1
+    0015: Ret
+
+  [11] l___private_Init_Data_Range_Basic_0__Std_Legacy_Range_forIn_x27_loop___at___00main_spec__0 (arity 6, locals 7)
+    0000: LoadLocal 0
+    0003: LoadLocal 1
+    0006: LoadLocal 2
+    0009: NatLit 0
+    0018: Box
+    0019: Call func=0, args=4
+    0025: StoreLocal 6
+    0028: LoadLocal 6
+    0031: Ret
+
+  [12] l___private_Init_Data_Range_Basic_0__Std_Legacy_Range_forIn_x27_loop___at___00main_spec__0___boxed (arity 6, locals 7)
+    0000: LoadLocal 0
+    0003: LoadLocal 1
+    0006: LoadLocal 2
+    0009: LoadLocal 3
+    0012: LoadLocal 4
+    0015: LoadLocal 5
+    0018: Call func=11, args=6
+    0024: StoreLocal 6
+    0027: LoadLocal 6
+    0030: Ret
+

@@ -1,0 +1,555 @@
+Module
+  Strings: 6
+  Functions: 30
+  Externs: 15
+  Entry: 26
+
+Strings
+  [0] ", "
+  [1] "[]"
+  [2] "["
+  [3] "]"
+  [4] "Before: "
+  [5] "After: "
+
+Externs
+  [0] lean_get_stdout (arity 0)
+  [1] lean_string_push (arity 2)
+  [2] l_Nat_decLt___boxed (arity 2)
+  [3] lean_nat_dec_lt (arity 2)
+  [4] l_Array_qpartition___redArg (arity 4)
+  [5] lean_nat_dec_le (arity 2)
+  [6] lean_nat_add (arity 2)
+  [7] lean_string_append (arity 2)
+  [8] l_Nat_reprFast (arity 1)
+  [9] lean_mk_empty_array_with_capacity (arity 1)
+  [10] lean_array_push (arity 2)
+  [11] lean_array_to_list (arity 1)
+  [12] lean_array_get_size (arity 1)
+  [13] lean_nat_dec_eq (arity 2)
+  [14] lean_nat_sub (arity 2)
+
+Functions
+  [0] l_IO_print___at___00IO_println___at___00main_spec__1_spec__2 (arity 2, locals 5)
+    0000: CallExtern extern=0, args=0
+    0006: StoreLocal 3
+    0009: LoadLocal 3
+    0012: CtorGet 4
+    0014: StoreLocal 2
+    0017: LoadLocal 2
+    0020: LoadLocal 0
+    0023: NatLit 0
+    0032: Box
+    0033: Apply args=2
+    0035: StoreLocal 4
+    0038: LoadLocal 4
+    0041: Ret
+
+  [1] l_IO_print___at___00IO_println___at___00main_spec__1_spec__2___boxed (arity 2, locals 3)
+    0000: LoadLocal 0
+    0003: LoadLocal 1
+    0006: Call func=0, args=2
+    0012: StoreLocal 2
+    0015: LoadLocal 2
+    0018: Ret
+
+  [2] l_IO_println___at___00main_spec__1 (arity 2, locals 5)
+    0000: NatLit 10
+    0009: Unbox
+    0010: StoreLocal 3
+    0013: LoadLocal 0
+    0016: LoadLocal 3
+    0019: CallExtern extern=1, args=2
+    0025: StoreLocal 2
+    0028: LoadLocal 2
+    0031: NatLit 0
+    0040: Box
+    0041: Call func=0, args=2
+    0047: StoreLocal 4
+    0050: LoadLocal 4
+    0053: Ret
+
+  [3] l_IO_println___at___00main_spec__1___boxed (arity 2, locals 3)
+    0000: LoadLocal 0
+    0003: LoadLocal 1
+    0006: Call func=2, args=2
+    0012: StoreLocal 2
+    0015: LoadLocal 2
+    0018: Ret
+
+  [4] l___private_Init_Data_Array_QSort_Basic_0__Array_qsort_sort___at___00main_spec__2___redArg___closed__0 (arity 0, locals 1)
+    0000: CallExtern extern=2, args=0
+    0006: StoreLocal 0
+    0009: LoadLocal 0
+    0012: Ret
+
+  [5] l___private_Init_Data_Array_QSort_Basic_0__Array_qsort_sort___at___00main_spec__2___redArg (arity 3, locals 13)
+    0000: LoadLocal 1
+    0003: LoadLocal 2
+    0006: CallExtern extern=3, args=2
+    0012: StoreLocal 9
+    0015: LoadLocal 9
+    0018: Dup
+    0019: NatLit 0
+    0028: NatEq
+    0029: JumpIfNot 10 (-> 44)
+    0034: Pop
+    0035: LoadLocal 0
+    0038: Ret
+    0039: Jump 159 (-> 203)
+    0044: Pop
+    0045: Call func=4, args=0
+    0051: StoreLocal 11
+    0054: LoadLocal 0
+    0057: LoadLocal 11
+    0060: LoadLocal 1
+    0063: LoadLocal 2
+    0066: CallExtern extern=4, args=4
+    0072: StoreLocal 5
+    0075: LoadLocal 5
+    0078: CtorGet 0
+    0080: StoreLocal 8
+    0083: LoadLocal 5
+    0086: CtorGet 1
+    0088: StoreLocal 12
+    0091: LoadLocal 2
+    0094: LoadLocal 8
+    0097: CallExtern extern=5, args=2
+    0103: StoreLocal 10
+    0106: LoadLocal 10
+    0109: Dup
+    0110: NatLit 0
+    0119: NatEq
+    0120: JumpIfNot 73 (-> 198)
+    0125: Pop
+    0126: LoadLocal 12
+    0129: LoadLocal 1
+    0132: LoadLocal 8
+    0135: Call func=5, args=3
+    0141: StoreLocal 4
+    0144: NatLit 1
+    0153: StoreLocal 6
+    0156: LoadLocal 8
+    0159: LoadLocal 6
+    0162: CallExtern extern=6, args=2
+    0168: StoreLocal 3
+    0171: LoadLocal 4
+    0174: LoadLocal 3
+    0177: LoadLocal 2
+    0180: Call func=5, args=3
+    0186: StoreLocal 7
+    0189: LoadLocal 7
+    0192: Ret
+    0193: Jump 5 (-> 203)
+    0198: Pop
+    0199: LoadLocal 12
+    0202: Ret
+
+  [6] l___private_Init_Data_Array_QSort_Basic_0__Array_qsort_sort___at___00main_spec__2___redArg___boxed (arity 3, locals 4)
+    0000: LoadLocal 0
+    0003: LoadLocal 1
+    0006: LoadLocal 2
+    0009: Call func=5, args=3
+    0015: StoreLocal 3
+    0018: LoadLocal 3
+    0021: Ret
+
+  [7] l_List_foldl___at___00List_toString___at___00main_spec__0_spec__0___closed__0 (arity 0, locals 1)
+    0000: StringLit str[0]
+    0005: StoreLocal 0
+    0008: LoadLocal 0
+    0011: Ret
+
+  [8] l_List_foldl___at___00List_toString___at___00main_spec__0_spec__0 (arity 2, locals 9)
+    0000: LoadLocal 1
+    0003: GetTag
+    0004: Dup
+    0005: NatLit 0
+    0014: NatEq
+    0015: JumpIfNot 10 (-> 30)
+    0020: Pop
+    0021: LoadLocal 0
+    0024: Ret
+    0025: Jump 87 (-> 117)
+    0030: Pop
+    0031: LoadLocal 1
+    0034: CtorGet 0
+    0036: StoreLocal 6
+    0039: LoadLocal 1
+    0042: CtorGet 1
+    0044: StoreLocal 3
+    0047: Call func=7, args=0
+    0053: StoreLocal 7
+    0056: LoadLocal 0
+    0059: LoadLocal 7
+    0062: CallExtern extern=7, args=2
+    0068: StoreLocal 4
+    0071: LoadLocal 6
+    0074: CallExtern extern=8, args=1
+    0080: StoreLocal 2
+    0083: LoadLocal 4
+    0086: LoadLocal 2
+    0089: CallExtern extern=7, args=2
+    0095: StoreLocal 8
+    0098: LoadLocal 8
+    0101: LoadLocal 3
+    0104: Call func=8, args=2
+    0110: StoreLocal 5
+    0113: LoadLocal 5
+    0116: Ret
+
+  [9] l_List_toString___at___00main_spec__0___closed__0 (arity 0, locals 1)
+    0000: StringLit str[1]
+    0005: StoreLocal 0
+    0008: LoadLocal 0
+    0011: Ret
+
+  [10] l_List_toString___at___00main_spec__0___closed__1 (arity 0, locals 1)
+    0000: StringLit str[2]
+    0005: StoreLocal 0
+    0008: LoadLocal 0
+    0011: Ret
+
+  [11] l_List_toString___at___00main_spec__0___closed__2 (arity 0, locals 1)
+    0000: StringLit str[3]
+    0005: StoreLocal 0
+    0008: LoadLocal 0
+    0011: Ret
+
+  [12] l_List_toString___at___00main_spec__0 (arity 1, locals 16)
+    0000: LoadLocal 0
+    0003: GetTag
+    0004: Dup
+    0005: NatLit 0
+    0014: NatEq
+    0015: JumpIfNot 19 (-> 39)
+    0020: Pop
+    0021: Call func=9, args=0
+    0027: StoreLocal 3
+    0030: LoadLocal 3
+    0033: Ret
+    0034: Jump 199 (-> 238)
+    0039: Pop
+    0040: LoadLocal 0
+    0043: CtorGet 1
+    0045: StoreLocal 13
+    0048: LoadLocal 13
+    0051: GetTag
+    0052: Dup
+    0053: NatLit 0
+    0062: NatEq
+    0063: JumpIfNot 78 (-> 146)
+    0068: Pop
+    0069: LoadLocal 0
+    0072: CtorGet 0
+    0074: StoreLocal 11
+    0077: Call func=10, args=0
+    0083: StoreLocal 14
+    0086: LoadLocal 11
+    0089: CallExtern extern=8, args=1
+    0095: StoreLocal 5
+    0098: LoadLocal 14
+    0101: LoadLocal 5
+    0104: CallExtern extern=7, args=2
+    0110: StoreLocal 10
+    0113: Call func=11, args=0
+    0119: StoreLocal 15
+    0122: LoadLocal 10
+    0125: LoadLocal 15
+    0128: CallExtern extern=7, args=2
+    0134: StoreLocal 12
+    0137: LoadLocal 12
+    0140: Ret
+    0141: Jump 92 (-> 238)
+    0146: Pop
+    0147: LoadLocal 0
+    0150: CtorGet 0
+    0152: StoreLocal 2
+    0155: Call func=10, args=0
+    0161: StoreLocal 6
+    0164: LoadLocal 2
+    0167: CallExtern extern=8, args=1
+    0173: StoreLocal 1
+    0176: LoadLocal 6
+    0179: LoadLocal 1
+    0182: CallExtern extern=7, args=2
+    0188: StoreLocal 9
+    0191: LoadLocal 9
+    0194: LoadLocal 13
+    0197: Call func=8, args=2
+    0203: StoreLocal 4
+    0206: NatLit 93
+    0215: Unbox
+    0216: StoreLocal 8
+    0219: LoadLocal 4
+    0222: LoadLocal 8
+    0225: CallExtern extern=1, args=2
+    0231: StoreLocal 7
+    0234: LoadLocal 7
+    0237: Ret
+
+  [13] l_main___closed__0 (arity 0, locals 2)
+    0000: NatLit 3
+    0009: StoreLocal 0
+    0012: LoadLocal 0
+    0015: CallExtern extern=9, args=1
+    0021: StoreLocal 1
+    0024: LoadLocal 1
+    0027: Ret
+
+  [14] l_main___closed__1 (arity 0, locals 3)
+    0000: NatLit 3
+    0009: StoreLocal 0
+    0012: Call func=13, args=0
+    0018: StoreLocal 1
+    0021: LoadLocal 1
+    0024: LoadLocal 0
+    0027: CallExtern extern=10, args=2
+    0033: StoreLocal 2
+    0036: LoadLocal 2
+    0039: Ret
+
+  [15] l_main___closed__2 (arity 0, locals 3)
+    0000: NatLit 1
+    0009: StoreLocal 0
+    0012: Call func=14, args=0
+    0018: StoreLocal 1
+    0021: LoadLocal 1
+    0024: LoadLocal 0
+    0027: CallExtern extern=10, args=2
+    0033: StoreLocal 2
+    0036: LoadLocal 2
+    0039: Ret
+
+  [16] l_main___closed__3 (arity 0, locals 3)
+    0000: NatLit 2
+    0009: StoreLocal 0
+    0012: Call func=15, args=0
+    0018: StoreLocal 1
+    0021: LoadLocal 1
+    0024: LoadLocal 0
+    0027: CallExtern extern=10, args=2
+    0033: StoreLocal 2
+    0036: LoadLocal 2
+    0039: Ret
+
+  [17] l_main___closed__4 (arity 0, locals 1)
+    0000: StringLit str[4]
+    0005: StoreLocal 0
+    0008: LoadLocal 0
+    0011: Ret
+
+  [18] l_main___closed__5 (arity 0, locals 2)
+    0000: Call func=16, args=0
+    0006: StoreLocal 0
+    0009: LoadLocal 0
+    0012: CallExtern extern=11, args=1
+    0018: StoreLocal 1
+    0021: LoadLocal 1
+    0024: Ret
+
+  [19] l_main___closed__6 (arity 0, locals 2)
+    0000: Call func=18, args=0
+    0006: StoreLocal 0
+    0009: LoadLocal 0
+    0012: Call func=12, args=1
+    0018: StoreLocal 1
+    0021: LoadLocal 1
+    0024: Ret
+
+  [20] l_main___closed__7 (arity 0, locals 3)
+    0000: Call func=19, args=0
+    0006: StoreLocal 0
+    0009: Call func=17, args=0
+    0015: StoreLocal 1
+    0018: LoadLocal 1
+    0021: LoadLocal 0
+    0024: CallExtern extern=7, args=2
+    0030: StoreLocal 2
+    0033: LoadLocal 2
+    0036: Ret
+
+  [21] l_main___closed__8 (arity 0, locals 1)
+    0000: StringLit str[5]
+    0005: StoreLocal 0
+    0008: LoadLocal 0
+    0011: Ret
+
+  [22] l_main___closed__9 (arity 0, locals 2)
+    0000: Call func=16, args=0
+    0006: StoreLocal 0
+    0009: LoadLocal 0
+    0012: CallExtern extern=12, args=1
+    0018: StoreLocal 1
+    0021: LoadLocal 1
+    0024: Ret
+
+  [23] l_main___closed__10 (arity 0, locals 3)
+    0000: NatLit 0
+    0009: StoreLocal 0
+    0012: Call func=22, args=0
+    0018: StoreLocal 1
+    0021: LoadLocal 1
+    0024: LoadLocal 0
+    0027: CallExtern extern=13, args=2
+    0033: StoreLocal 2
+    0036: LoadLocal 2
+    0039: Ret
+
+  [24] l_main___closed__11 (arity 0, locals 3)
+    0000: NatLit 1
+    0009: StoreLocal 0
+    0012: Call func=22, args=0
+    0018: StoreLocal 1
+    0021: LoadLocal 1
+    0024: LoadLocal 0
+    0027: CallExtern extern=14, args=2
+    0033: StoreLocal 2
+    0036: LoadLocal 2
+    0039: Ret
+
+  [25] l_main___closed__12 (arity 0, locals 3)
+    0000: Call func=24, args=0
+    0006: StoreLocal 0
+    0009: NatLit 0
+    0018: StoreLocal 1
+    0021: LoadLocal 1
+    0024: LoadLocal 0
+    0027: CallExtern extern=5, args=2
+    0033: StoreLocal 2
+    0036: LoadLocal 2
+    0039: Ret
+
+  [26] l_main (arity 1, locals 19)
+    0000: Call func=16, args=0
+    0006: StoreLocal 2
+    0009: Call func=20, args=0
+    0015: StoreLocal 16
+    0018: LoadLocal 16
+    0021: NatLit 0
+    0030: Box
+    0031: Call func=2, args=2
+    0037: StoreLocal 13
+    0040: LoadLocal 13
+    0043: GetTag
+    0044: Dup
+    0045: NatLit 0
+    0054: NatEq
+    0055: JumpIfNot 130 (-> 190)
+    0060: Pop
+    0061: NatLit 0
+    0070: StoreLocal 9
+    0073: Call func=23, args=0
+    0079: StoreLocal 6
+    0082: LoadLocal 6
+    0085: Dup
+    0086: NatLit 0
+    0095: NatEq
+    0096: JumpIfNot 72 (-> 173)
+    0101: Pop
+    0102: Call func=24, args=0
+    0108: StoreLocal 12
+    0111: Call func=25, args=0
+    0117: StoreLocal 15
+    0120: LoadLocal 15
+    0123: Dup
+    0124: NatLit 0
+    0133: NatEq
+    0134: JumpIfNot 17 (-> 156)
+    0139: Pop
+    0140: LoadLocal 12
+    0143: StoreLocal 8
+    0146: Jump 147 (-> 298)
+    0151: Jump 12 (-> 168)
+    0156: Pop
+    0157: LoadLocal 9
+    0160: StoreLocal 8
+    0163: Jump 130 (-> 298)
+    0168: Jump 12 (-> 185)
+    0173: Pop
+    0174: LoadLocal 2
+    0177: StoreLocal 17
+    0180: Jump 10 (-> 195)
+    0185: Jump 5 (-> 195)
+    0190: Pop
+    0191: LoadLocal 13
+    0194: Ret
+    0195: Call func=21, args=0
+    0201: StoreLocal 5
+    0204: LoadLocal 17
+    0207: CallExtern extern=11, args=1
+    0213: StoreLocal 11
+    0216: LoadLocal 11
+    0219: Call func=12, args=1
+    0225: StoreLocal 18
+    0228: LoadLocal 5
+    0231: LoadLocal 18
+    0234: CallExtern extern=7, args=2
+    0240: StoreLocal 14
+    0243: LoadLocal 14
+    0246: NatLit 0
+    0255: Box
+    0256: Call func=2, args=2
+    0262: StoreLocal 3
+    0265: LoadLocal 3
+    0268: Ret
+    0269: LoadLocal 2
+    0272: LoadLocal 1
+    0275: LoadLocal 10
+    0278: Call func=5, args=3
+    0284: StoreLocal 4
+    0287: LoadLocal 4
+    0290: StoreLocal 17
+    0293: Jump -103 (-> 195)
+    0298: LoadLocal 8
+    0301: LoadLocal 12
+    0304: CallExtern extern=5, args=2
+    0310: StoreLocal 7
+    0313: LoadLocal 7
+    0316: Dup
+    0317: NatLit 0
+    0326: NatEq
+    0327: JumpIfNot 23 (-> 355)
+    0332: Pop
+    0333: LoadLocal 8
+    0336: StoreLocal 1
+    0339: LoadLocal 8
+    0342: StoreLocal 10
+    0345: Jump -81 (-> 269)
+    0350: Jump 18 (-> 373)
+    0355: Pop
+    0356: LoadLocal 8
+    0359: StoreLocal 1
+    0362: LoadLocal 12
+    0365: StoreLocal 10
+    0368: Jump -104 (-> 269)
+
+  [27] l_main___boxed (arity 1, locals 2)
+    0000: LoadLocal 0
+    0003: Call func=26, args=1
+    0009: StoreLocal 1
+    0012: LoadLocal 1
+    0015: Ret
+
+  [28] l___private_Init_Data_Array_QSort_Basic_0__Array_qsort_sort___at___00main_spec__2 (arity 7, locals 8)
+    0000: LoadLocal 1
+    0003: LoadLocal 2
+    0006: LoadLocal 3
+    0009: Call func=5, args=3
+    0015: StoreLocal 7
+    0018: LoadLocal 7
+    0021: Ret
+
+  [29] l___private_Init_Data_Array_QSort_Basic_0__Array_qsort_sort___at___00main_spec__2___boxed (arity 7, locals 8)
+    0000: LoadLocal 0
+    0003: LoadLocal 1
+    0006: LoadLocal 2
+    0009: LoadLocal 3
+    0012: LoadLocal 4
+    0015: LoadLocal 5
+    0018: LoadLocal 6
+    0021: Call func=28, args=7
+    0027: StoreLocal 7
+    0030: LoadLocal 7
+    0033: Ret
+

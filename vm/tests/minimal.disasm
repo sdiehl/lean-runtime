@@ -1,0 +1,45 @@
+Module
+  Strings: 0
+  Functions: 4
+  Externs: 1
+  Entry: 2
+
+Strings
+
+Externs
+  [0] lean_nat_add (arity 2)
+
+Functions
+  [0] l_add (arity 2, locals 3)
+    0000: LoadLocal 0
+    0003: LoadLocal 1
+    0006: CallExtern extern=0, args=2
+    0012: StoreLocal 2
+    0015: LoadLocal 2
+    0018: Ret
+
+  [1] l_add___boxed (arity 2, locals 3)
+    0000: LoadLocal 0
+    0003: LoadLocal 1
+    0006: Call func=0, args=2
+    0012: StoreLocal 2
+    0015: LoadLocal 2
+    0018: Ret
+
+  [2] l_main (arity 1, locals 3)
+    0000: NatLit 0
+    0009: Box
+    0010: StoreLocal 1
+    0013: LoadLocal 1
+    0016: AllocCtor tag=0, fields=1
+    0019: StoreLocal 2
+    0022: LoadLocal 2
+    0025: Ret
+
+  [3] l_main___boxed (arity 1, locals 2)
+    0000: LoadLocal 0
+    0003: Call func=2, args=1
+    0009: StoreLocal 1
+    0012: LoadLocal 1
+    0015: Ret
+

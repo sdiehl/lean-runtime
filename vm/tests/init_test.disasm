@@ -1,0 +1,210 @@
+Module
+  Strings: 0
+  Functions: 10
+  Externs: 4
+  Entry: 8
+
+Strings
+
+Externs
+  [0] lean_nat_dec_eq (arity 2)
+  [1] lean_nat_sub (arity 2)
+  [2] lean_nat_add (arity 2)
+  [3] lean_nat_mul (arity 2)
+
+Functions
+  [0] l_factorial (arity 1, locals 9)
+    0000: NatLit 0
+    0009: StoreLocal 2
+    0012: LoadLocal 0
+    0015: LoadLocal 2
+    0018: CallExtern extern=0, args=2
+    0024: StoreLocal 6
+    0027: LoadLocal 6
+    0030: Dup
+    0031: NatLit 1
+    0040: NatEq
+    0041: JumpIfNot 22 (-> 68)
+    0046: Pop
+    0047: NatLit 1
+    0056: StoreLocal 3
+    0059: LoadLocal 3
+    0062: Ret
+    0063: Jump 74 (-> 142)
+    0068: Pop
+    0069: NatLit 1
+    0078: StoreLocal 7
+    0081: LoadLocal 0
+    0084: LoadLocal 7
+    0087: CallExtern extern=1, args=2
+    0093: StoreLocal 4
+    0096: LoadLocal 4
+    0099: LoadLocal 7
+    0102: CallExtern extern=2, args=2
+    0108: StoreLocal 1
+    0111: LoadLocal 4
+    0114: Call func=0, args=1
+    0120: StoreLocal 8
+    0123: LoadLocal 1
+    0126: LoadLocal 8
+    0129: CallExtern extern=3, args=2
+    0135: StoreLocal 5
+    0138: LoadLocal 5
+    0141: Ret
+
+  [1] l_factorial___boxed (arity 1, locals 2)
+    0000: LoadLocal 0
+    0003: Call func=0, args=1
+    0009: StoreLocal 1
+    0012: LoadLocal 1
+    0015: Ret
+
+  [2] l_fib (arity 1, locals 11)
+    0000: NatLit 0
+    0009: StoreLocal 2
+    0012: LoadLocal 0
+    0015: LoadLocal 2
+    0018: CallExtern extern=0, args=2
+    0024: StoreLocal 7
+    0027: LoadLocal 7
+    0030: Dup
+    0031: NatLit 1
+    0040: NatEq
+    0041: JumpIfNot 10 (-> 56)
+    0046: Pop
+    0047: LoadLocal 2
+    0050: Ret
+    0051: Jump 146 (-> 202)
+    0056: Pop
+    0057: NatLit 1
+    0066: StoreLocal 4
+    0069: LoadLocal 0
+    0072: LoadLocal 4
+    0075: CallExtern extern=1, args=2
+    0081: StoreLocal 8
+    0084: LoadLocal 8
+    0087: LoadLocal 2
+    0090: CallExtern extern=0, args=2
+    0096: StoreLocal 5
+    0099: LoadLocal 5
+    0102: Dup
+    0103: NatLit 1
+    0112: NatEq
+    0113: JumpIfNot 10 (-> 128)
+    0118: Pop
+    0119: LoadLocal 4
+    0122: Ret
+    0123: Jump 74 (-> 202)
+    0128: Pop
+    0129: LoadLocal 8
+    0132: LoadLocal 4
+    0135: CallExtern extern=1, args=2
+    0141: StoreLocal 1
+    0144: LoadLocal 1
+    0147: LoadLocal 4
+    0150: CallExtern extern=2, args=2
+    0156: StoreLocal 10
+    0159: LoadLocal 10
+    0162: Call func=2, args=1
+    0168: StoreLocal 6
+    0171: LoadLocal 1
+    0174: Call func=2, args=1
+    0180: StoreLocal 3
+    0183: LoadLocal 6
+    0186: LoadLocal 3
+    0189: CallExtern extern=2, args=2
+    0195: StoreLocal 9
+    0198: LoadLocal 9
+    0201: Ret
+
+  [3] l_fib___boxed (arity 1, locals 2)
+    0000: LoadLocal 0
+    0003: Call func=2, args=1
+    0009: StoreLocal 1
+    0012: LoadLocal 1
+    0015: Ret
+
+  [4] l_sumList (arity 1, locals 6)
+    0000: LoadLocal 0
+    0003: GetTag
+    0004: Dup
+    0005: NatLit 0
+    0014: NatEq
+    0015: JumpIfNot 22 (-> 42)
+    0020: Pop
+    0021: NatLit 0
+    0030: StoreLocal 1
+    0033: LoadLocal 1
+    0036: Ret
+    0037: Jump 48 (-> 90)
+    0042: Pop
+    0043: LoadLocal 0
+    0046: CtorGet 0
+    0048: StoreLocal 4
+    0051: LoadLocal 0
+    0054: CtorGet 1
+    0056: StoreLocal 2
+    0059: LoadLocal 2
+    0062: Call func=4, args=1
+    0068: StoreLocal 5
+    0071: LoadLocal 4
+    0074: LoadLocal 5
+    0077: CallExtern extern=2, args=2
+    0083: StoreLocal 3
+    0086: LoadLocal 3
+    0089: Ret
+
+  [5] l_sumList___boxed (arity 1, locals 2)
+    0000: LoadLocal 0
+    0003: Call func=4, args=1
+    0009: StoreLocal 1
+    0012: LoadLocal 1
+    0015: Ret
+
+  [6] l_optAdd (arity 2, locals 4)
+    0000: LoadLocal 0
+    0003: GetTag
+    0004: Dup
+    0005: NatLit 0
+    0014: NatEq
+    0015: JumpIfNot 10 (-> 30)
+    0020: Pop
+    0021: LoadLocal 1
+    0024: Ret
+    0025: Jump 28 (-> 58)
+    0030: Pop
+    0031: LoadLocal 0
+    0034: CtorGet 0
+    0036: StoreLocal 3
+    0039: LoadLocal 3
+    0042: LoadLocal 1
+    0045: CallExtern extern=2, args=2
+    0051: StoreLocal 2
+    0054: LoadLocal 2
+    0057: Ret
+
+  [7] l_optAdd___boxed (arity 2, locals 3)
+    0000: LoadLocal 0
+    0003: LoadLocal 1
+    0006: Call func=6, args=2
+    0012: StoreLocal 2
+    0015: LoadLocal 2
+    0018: Ret
+
+  [8] l_main (arity 1, locals 3)
+    0000: NatLit 0
+    0009: Box
+    0010: StoreLocal 1
+    0013: LoadLocal 1
+    0016: AllocCtor tag=0, fields=1
+    0019: StoreLocal 2
+    0022: LoadLocal 2
+    0025: Ret
+
+  [9] l_main___boxed (arity 1, locals 2)
+    0000: LoadLocal 0
+    0003: Call func=8, args=1
+    0009: StoreLocal 1
+    0012: LoadLocal 1
+    0015: Ret
+
